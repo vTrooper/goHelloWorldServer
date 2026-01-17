@@ -6,9 +6,10 @@ pipeline:
   properties:
     ci:
       codebase:
-        build: <+input>
         connectorRef: account.Github_OAuth_1768687418969
-        repoName: vTrooper/goHelloWorldServer
+        repoName: vtrooper/goHelloWorldServer
+        build: <+input>
+        sparseCheckout: []
   stages:
     - stage:
         identifier: build
