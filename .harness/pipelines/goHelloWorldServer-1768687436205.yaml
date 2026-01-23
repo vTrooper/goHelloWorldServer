@@ -51,7 +51,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: <+input>.selectOneFrom(DockerHub)
-                    repo: vTrooper/goHelloWorldServer
+                    repo: vtrooper/gohelloworldserver
                     tags:
                       - latest
                     caching: true
